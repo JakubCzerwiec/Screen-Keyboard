@@ -27,7 +27,7 @@ const screen = document.querySelector('.screen1');
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', () => {
         let keyValue = btns[i].getAttribute('data-num');
-        if (screen.innerHTML.length < 10) {
+        if (screen.innerHTML.length < 30) {
         screen.innerHTML += keyValue;
         }
     })
@@ -35,7 +35,7 @@ for (let i = 0; i < btns.length; i++) {
 
 space.addEventListener('click', () => {
     let spaceSign = String.fromCharCode(20);
-    if (screen.innerHTML.length < 10) {
+    if (screen.innerHTML.length < 30) {
     screen.innerHTML += spaceSign;
     } 
 })
